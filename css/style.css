@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* konversi nilai punya */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    color: #334155;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #0f172a;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #64748b;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #1e293b;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+input:focus, select:focus {
+    border-color: #6c5ce7;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.15);
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #6c5ce7 0%, #8073ea 100%);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(108, 92, 231, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.success { 
+    background-color: #ecfdf5; 
+    color: #065f46; 
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #a7f3d0;
+    margin-top: 25px; 
+    font-size: 1.1rem; 
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.1);
+}
+
+.error { 
+    background-color: #fef2f2; 
+    color: #b91c1c; 
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #fecaca;
+    font-size: 0.9em; 
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn-reset {
+    display: block;
+    width: 100%;
+    background: #c02a27; 
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.btn-reset:hover {
+    background: #ff0000;
+    transform: translateY(-2px);
+}
+
+/* tabel nilai punya */
+.container-large {
+    width: 95%; 
+    max-width: 1200px; 
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.08);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 85%;
+    border-collapse: separate; 
+    border-spacing: 0;
+    margin: 25px 0;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0; 
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px 12px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0; 
+    border-right: 1px solid #e2e8f0; 
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+thead tr {
+    background: linear-gradient(135deg, #6c5ce7 0%, #8073ea 100%);
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fcfcfd;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.danger-row {
+    background-color: #fef2f2 !important;
+    color: #b91c1c;
+}
+
+.danger-row td {
+    border-bottom-color: #fecaca;
+}
+
+.danger-row:hover {
+    background-color: #fee2e2 !important;
+}
+
+h3 span {
+    font-weight: 700;
+    padding: 5px 15px;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+}
